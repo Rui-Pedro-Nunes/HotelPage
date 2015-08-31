@@ -6582,3 +6582,8 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.col-2 {
+  width: 32%;
+  padding: 8%
+}
