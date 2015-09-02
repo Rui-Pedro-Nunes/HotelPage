@@ -867,54 +867,20 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
-div.quartosLink {
+
+a.quartosLink {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;
-    }
-a.quartosLink2 {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 112px;
-    max-height:112px;
+    max-width: 360px;
+    max-height:260px;
 }
 
-a.quartosLink2:hover {
-    opacity:0.3
+a.quartosLink:hover {
+    opacity:0.3;
 
 }
 
-div.quartosLinkPosition {
-    position: absolute;
-    max-width: 112px;
-    max-height:112px;
-    left: 145px;
-    bottom:0px;
-
-}
-div.quartosLink-hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: rgba(254,209,54,.9);
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
-}
-div.quartosLink-hover:hover {
-    opacity:1;
-}
-
-div.quartosLink-hover-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 20px;
-    margin-top: -12px;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
+a.portfolio-link:hover {
+    opacity: 0.3;
 }
