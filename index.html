@@ -24,6 +24,27 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+     <!-- googleMAps-->
+    <script src="http://maps.googleapis.com/maps/api/js"> </script>
+        <script>
+            function initialize() {
+              var mapProp = {
+                center:new google.maps.LatLng(40.479587, -7.777498),
+                zoom:10,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+              };
+              var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+              
+              var marker = new google.maps.Marker({
+                position: {lat: 40.479231786780566, lng: -7.776611637964379},
+                map: map,
+                title: 'Recanto da Avó'
+              });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        
+        </script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -333,7 +354,32 @@
                     <h2 class="section-heading">Localização / Contatos</h2>
                     <h3 class="section-subheading text-muted">Para qualquer esclarecimento ou marcação, por favor, não hesite em contatar-nos:</h3>
                 </div>
-            </div>  
+            </div>
+
+            <div class="col-sm-6 portfolio-item">
+                <h4 class="text-center">Contato</h4>
+                <div class="contactos">
+                    <p><span class="glyphicon glyphicon-home" aria-hidden="true"></span> <strong>Morada:</strong></p>
+                    <p >Recanto da Avó</p>
+                    <p >Rua da fonte, nº4</p>
+                    <p >Paranhos da Beira</p>
+                    <p >6270-133 Seia</p>
+                    <p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> <Strong>Telefone:</strong></p>
+                    <p>+351961134266</p>
+                    <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <Strong>E-Mail:</strong></p>
+                    <p><E-mail>aidinanunes@hotmail.com</E-mail></p>
+                </div>   
+            </div>
+
+            <div class="col-sm-6 portfolio-item">
+                <h4 class="text-center">Localização</h4>
+                <div id="googleMap" style ="width:360;heigth:260"></div>
+
+            </div>
+
+
+
+            <!-- RUI  
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 row-inline">
                     <h4>Recanto da Avó</h4>
@@ -347,6 +393,7 @@
                     <E-mail>aidinanunes@hotmail.com</E-mail>
                 </div>
             </div>
+            -->
         </div>
     </section>
 
@@ -905,6 +952,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+   
 
 </body>
 
