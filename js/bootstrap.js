@@ -518,6 +518,7 @@ if (typeof jQuery === 'undefined') {
     .on('click.bs.carousel.data-api', '[data-slide-to]', clickHandler)
 
   $(window).on('load', function () {
+    alert("bla4")
     $('[data-ride="carousel"]').each(function () {
       var $carousel = $(this)
       Plugin.call($carousel, $carousel.data())
@@ -1991,6 +1992,7 @@ if (typeof jQuery === 'undefined') {
   // ==================
 
   $(window).on('load.bs.scrollspy.data-api', function () {
+    alert("bla3")
     $('[data-spy="scroll"]').each(function () {
       var $spy = $(this)
       Plugin.call($spy, $spy.data())
@@ -2301,6 +2303,7 @@ if (typeof jQuery === 'undefined') {
   // ==============
 
   $(window).on('load', function () {
+    alert("bla1");
     $('[data-spy="affix"]').each(function () {
       var $spy = $(this)
       var data = $spy.data()

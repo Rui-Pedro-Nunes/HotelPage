@@ -889,8 +889,5 @@ div.contactos {
     margin: auto;
     position: relative;
     max-width: 360px;
-    text-align: center;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #207A1F
+    text-align: left;
 }
