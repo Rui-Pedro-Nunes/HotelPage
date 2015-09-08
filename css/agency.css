@@ -889,5 +889,10 @@ div.contactos {
     margin: auto;
     position: relative;
     max-width: 360px;
+    width: 230px;
     text-align: left;
+}
+
+div.contactos p {
+    padding-left:30px;
 }
