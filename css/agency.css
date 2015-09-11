@@ -14,7 +14,7 @@ body {
 }
 
 .text-primary {
-    color: #fec503;
+    color: #207A1F;
 }
 
 p {
@@ -896,3 +896,50 @@ div.contactos {
 div.contactos p {
     padding-left:30px;
  }
+
+ table.table {
+    border-collapse: collapse;
+    border: solid #207A1F;
+    
+}
+ 
+table.table thead {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+table.table tbody {
+
+}
+
+table.table th, td {
+    text-align: center;
+}
+
+table.table li {
+    list-style: none;
+    padding-top: 3px;
+}
+
+th.thead {
+    background-color: #207A1F;
+}
+td.tdList {
+    background-color: #C0C0C0
+}
+
+td.tdPrice {
+    background-color: #D8D8D8;
+}
+div.captions {
+    position : relative;
+    width:680px;
+    margin:auto;
+
+}
+p.captionTable {
+    color: black;
+    text-align: left;
+    margin-bottom: 0;
+}
